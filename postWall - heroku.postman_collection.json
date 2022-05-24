@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "b5beabc5-f72a-47f4-85b3-a36d825be61c",
+		"name": "postWall - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3846885"
+	},
+	"item": [
+		{
+			"name": "readPostsAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://guarded-woodland-19060.herokuapp.com/posts/",
+					"protocol": "https",
+					"host": [
+						"guarded-woodland-19060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readPostsOne",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://guarded-woodland-19060.herokuapp.com/posts/628d47ff5dc5f6f4875cf7c3",
+					"protocol": "https",
+					"host": [
+						"guarded-woodland-19060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"628d47ff5dc5f6f4875cf7c3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPostsOne",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"name\": \"jamie\",\r\n            \"tags\":[\"心情\"],\r\n            \"type\":\"person\",\r\n            \"content\":\"開心\",\r\n            \"image\":\"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://guarded-woodland-19060.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"guarded-woodland-19060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePostsOne",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"tags\":[\"test\"],\r\n            \"content\":\"test content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://guarded-woodland-19060.herokuapp.com/posts/628d4e99e598973dadba384b",
+					"protocol": "https",
+					"host": [
+						"guarded-woodland-19060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"628d4e99e598973dadba384b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePostsAll",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://mysterious-inlet-46951.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"mysterious-inlet-46951",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePostsOne",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://guarded-woodland-19060.herokuapp.com/posts/628d47ff5dc5f6f4875cf7c3",
+					"protocol": "https",
+					"host": [
+						"guarded-woodland-19060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"628d47ff5dc5f6f4875cf7c3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
